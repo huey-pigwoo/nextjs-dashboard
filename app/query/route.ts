@@ -12,6 +12,7 @@ async function listInvoices() {
 	return data.rows;
 }
 const routeData = await listInvoices();
+console.log('routeData', routeData)
 
 export async function GET() {
   // return Response.json({
